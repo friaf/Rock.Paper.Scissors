@@ -1,0 +1,69 @@
+/* Global style */
+
+body {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+/* Game area */
+
+#game-area {
+    background: whitesmoke;
+    border-style:solid;
+    border-color: black;
+    box-sizing: border-box;
+    width: 85%;
+    height: 90vh;
+    max-height: 700px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    padding: 2%;
+}
+
+#computer-control {
+    margin-top: 3%;
+}
+
+
+.user-button, .computer-button {
+    font-family: 'Abel', sans-serif;
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: larger;
+
+}
+
+
+.red {
+    background-color: orangered;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.blue {
+    background-color:deepskyblue;
+}
+
+#image-area {
+    height: 50vh;
+}
+
+#hero-image {
+    height: 45vh;
+    width: 60%;
+}
