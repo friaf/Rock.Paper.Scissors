@@ -10,6 +10,13 @@
     <title>Rock.Paper.Scissors</title>
 </head>
 <body>
+
+    <div id="score-area1">
+        <p>Score:</p>
+        <p class="win-score-computer">Win <span id="computer">0</span></p>
+        <p class="lose-score-computer">Lose <span id="computer">0</span></p>
+        
+    </div>
  
     <div id="game-area">
 
@@ -19,26 +26,27 @@
             <button class="computer-button yellow">Scissors</button>
         </div>
 
-        <div id="score-area">
-            <p class="score-computer">Score <span id="computer">0</span></p>
-        </div>
+       
 
         <div id="image-area">
             <span><img id="hero-image" src="assets/images/mickey_hands.jpeg" alt="hero-image"></span>
         </div>
 
-        <div id="score-area">
-            <p class="score-user">Score <span id="user">0</span></p>
-        </div>
 
         <div id="user-control">
 
-            <button data-choice="rock" class="user-button yellow">Rock</button>
+            <button data-choice="rock" class="user-button yellow1">Rock</button>
             <button data-choice="rock" class="user-button green">Paper</button>
             <button data-choice="rock" class="user-button blue">Scissors</button>
 
         </div>
 
+    </div>
+
+    <div id="score-area2">
+        <p>Score:</p>
+        <p class="win-score-user">Win <span id="user">0</span></p>
+        <p class="lose-score-user">Lose <span id="user">0</span></p>
     </div>
     
 
