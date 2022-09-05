@@ -69,14 +69,50 @@ body {
 
 .red {
     background-color: orangered;
+    display:inline-block;
+    color: black;
+    border:1px solid black;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.4);
+    vertical-align:middle;
+    max-width: 95px;
+    max-height: 35px;
+    text-align: center;
+}
+
+.red p {
+    margin-top: 3px;
 }
 
 .orange {
     background-color: orange;
+    display:inline-block;
+    color: black;
+    border:1px solid black;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.4);
+    vertical-align:middle;
+    max-width: 95px;
+    max-height: 35px;
+    text-align: center;
+}
+
+.orange p {
+    margin-top: 3px;
 }
 
 .yellow {
     background-color: yellow;
+    display:inline-block;
+    color: black;
+    border:1px solid black;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.4);
+    vertical-align:middle;
+    max-width: 95px;
+    max-height: 35px;
+    text-align: center;
+}
+
+.yellow p {
+    margin-top: 3px;
 }
 
 .yellow1 {
