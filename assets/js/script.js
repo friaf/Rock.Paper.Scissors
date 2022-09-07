@@ -1,40 +1,52 @@
-const computerScore = document.getElementByID("computer-score");
-const userScore = document.getElementByID("user-score");
-const computerLose = document.getElementByID("computer-lose");
-const userLose = document.etElementByID("user-lose");
-const computerButton = document.getElementsByClassName("computer-buttom");
-const heroImage = dpcument.getElementByID("hero-image");
-const buttons = document.getElementsByClassName("user-button")
+const buttons = document.getElementsByClassName("user-button");
+const computerButton = document.getElementsByClassName("computer-button")
+const playerScore = document.getElementById("user-score");
+const computerScore = document.getElementById("computer-score");
+const computerImage = document.getElementById("hero-image-computer");
+
 const choices = ["rock","paper","scissors"];
 
-for ( let button of buttons){
-    button.addEventlistener("click", function(){
-        let userChoice = this.getAttribute("data-choice");
-        playGame(userChoice);
-    })
+for (let button of buttons) {
+    button.addEventListener("click", function() {
+        let playerChoice = this.getAttribute("data-choice");
+        playGame(playerChoice);
+        console.log(playerChoice)
+    });
     
 }
 
-
-function playGame(userChoice) {
-
+function playGame(playerChoice) {
+    
     let computerChoice = Math.floor(Math.random() * 3);
-    let result = checkWinner(choices[computerChoice], choices[userChoice])
 
-    updateScores(result);
+    
+
+
+    computerImage.src = `assets/images/${choices[computerChoice]}.png`;
+    computerImage.alt = choices[computerChoice];
+
+
+        
+}
+
+    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+    
+
+
+    updateScores(result)
+
+
+
+
+function updateScores() {
 
 }
 
+function checkWinner() {
+    
+    
+    
 
+}
 
-
-
-
-function updateScores()
-
-function computerChoice()
-
-function imageChange()
-
-function scoreUpdate()
 
