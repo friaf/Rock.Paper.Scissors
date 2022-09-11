@@ -18,35 +18,37 @@ for (let button of buttons) {
 function playGame(playerChoice) {
     
     let computerChoice = Math.floor(Math.random() * 3);
-
+        
     
-
 
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-
-        
-}
-
     let result = checkWinner(choices[computerChoice], choices[playerChoice]);
-    
+
 
 
     updateScores(result)
 
-
-
-
-function updateScores() {
-
+        
 }
 
-function checkWinner() {
-    
-    
-    
+   
 
+
+function checkWinner(computerChoice, playerChoice) {
+
+    if(computerChoice === playerChoice){alert(`its a tie`);}
+    else if(computerChoice === "rock" && playerChoice === "paper"){alert(`its a win`);}
+    else if(computerChoice === "rock" && playerChoice === "scissors"){alert(`you loose`);}
+        else{return "Input not valid.";}
+
+     
+    
+ 
 }
 
+function updateScores (){
+
+}
 
